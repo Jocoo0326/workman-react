@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Work } from "./board_view/model";
 
 class Pool extends Component {
   state = { works: [] };
@@ -18,23 +19,16 @@ class Pool extends Component {
   }
   render() {
     return (
-      <div className="pool container">
+      <div className="pool container" id="pool">
         {this.state.works.map((w, index) => {
           return (
             <div className="work" key={index} id={w.name}>
-              产品: {w.name} 数量: {w.amount}
+              {"产品: " + w.name + " 数量: " + w.amount}
             </div>
           );
         })}
       </div>
     );
-  }
-}
-
-class Work {
-  constructor(name, amount) {
-    this.name = name;
-    this.amount = amount;
   }
 }
 

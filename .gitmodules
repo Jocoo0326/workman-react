@@ -1,3 +1,6 @@
 [submodule "dragula"]
 	path = dragula
 	url = https://github.com/Jocoo0326/dragula
+[submodule "src/dragula"]
+	path = src/dragula
+	url = https://github.com/Jocoo0326/dragula
